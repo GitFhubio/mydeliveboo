@@ -1,0 +1,41 @@
+nav {
+    background-color: $bg-primary-color;
+    .container {
+        a {
+            img {
+                width: 99.33px;
+                transition: 0.3s;
+                &:hover{
+                    filter:invert(100%);
+                    transition: 0.3s;
+                }
+            }
+        }
+        .login {
+            a {
+                color: $secondary-color;
+            }
+        }
+
+        #navbarSupportedContent {
+
+            .my-btn-login {
+                font-size: $font-small;
+                letter-spacing: $letterspacing-medium;
+            }
+
+            .my-btn-register {
+                font-size: $font-small;
+                letter-spacing: $letterspacing-medium;
+            }
+            .my-btn-dashboard {
+                font-size: $font-small;
+                letter-spacing: $letterspacing-medium;
+            }
+            .my-btn-logout {
+                font-size: $font-small;
+                letter-spacing: $letterspacing-medium;
+            }
+        }
+    }
+}

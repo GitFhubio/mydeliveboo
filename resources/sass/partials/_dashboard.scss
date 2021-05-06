@@ -1,0 +1,149 @@
+.header {
+    @include flexCenter;
+    height: 200px;
+    background-image: radial-gradient(rgba(0,2,17,0.16) 0%,rgba(0,2,17,0.4) 100%),url('https://images.adsttc.com/media/images/5e4c/1025/6ee6/7e0b/9d00/0877/large_jpg/feature_-_Main_hall_1.jpg?1582043123');
+
+    background-position: 50% 60%;
+    text-align: center;
+    padding: 0px 4px;
+    h1 {
+        font-size: $font-extralarge;
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        @media screen and (max-width: 762px) {
+            font-size: $font-large;
+        }
+}
+}
+
+.main-container {
+    @include flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding: 30px 0;
+
+    .info-container {
+        width: 300px;
+        border-radius: 50px;
+        box-shadow: $box-shadow-light;
+        padding: 40px;
+        margin-left:10%;
+        background-color: white;
+        text-align: center;
+        overflow-wrap: break-word;
+
+        h3 {
+            padding: 5px 0;
+            font-size: 1.7rem;
+        }
+
+        ul {
+            list-style:none;
+            font-size: $font-small;
+            span{
+               font-weight: bold;
+               line-height: 0.9;
+               display: block;
+            }
+            li {
+                margin: 10px 0;
+                line-height: 0.9;
+            }
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: $desktop) {
+            width: 40%;
+            padding: 20px;
+
+            h3 {
+                font-size: $font-small;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            li {
+                font-size: $font-extrasmall;
+                //overflow-wrap: break-word;
+                word-wrap: break-word;
+            }
+        }
+    }
+
+    .boxes-container {
+        @include flex;
+        width: 800px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+
+        .box {
+            @include flex;
+            border-radius: 50px;
+            box-shadow: $box-shadow-light;
+            width: 30%;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+
+            img {
+                height: 150px;
+                border-radius: 20px;
+            }
+
+            a {
+
+             // restyling da verificare
+             //   background-color: $bg-primary-color;
+
+            //    &:hover {
+                 //   background-color: $bg-footer-color;
+                 //   color: #fff;
+               // }
+
+
+                // background-color: rgba(#ffc107, 0.8);
+                margin-top: 20px;
+                font-size: $font-small;
+                width: 165px;
+
+                @media (max-width: $desktop) {
+                    width: 60%;
+                    padding: 5px;
+                    line-height: 1;
+                    font-size: $font-extrasmall;
+                }
+            }
+        }
+
+        @media (max-width: $desktop) {
+            width: 60%;
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 450px;
+
+            .box {
+                width: 70%;
+                padding: 10px 0;
+
+                img {
+                    height: 50px;
+                }
+
+                button {
+                    a {
+                        font-size: $font-extrasmall;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

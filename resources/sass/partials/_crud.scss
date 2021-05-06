@@ -1,0 +1,149 @@
+//LO STILE
+.crud-navbar{
+background-color:$bg-footer-color;
+font-size: $font-small;
+.my-btn-create{
+    font-size: $font-small;
+    @media (max-width: $desktop) {
+        margin-top:2px;
+    }
+
+}
+.crud-search-section{
+    @include flex;
+    align-items: center;
+    @media only screen and (max-width: 600px){
+    flex-direction:column;
+    align-items:start;
+    }
+    a{
+     text-decoration:none;
+     color:black;
+    }
+    button{
+          padding:5px;
+          margin:0 3px;
+          border:none;
+          border-radius:3px;
+
+          @media (max-width: $desktop) {
+            width: 150px;
+            margin:2px 0px;
+        }
+
+        &:hover{
+            background-color: rgba($bg-primary-color,0.9);
+          }
+      }
+      .search{
+        @media (max-width: $desktop) {
+            margin:0px 4px;
+        }
+
+      }
+    input{
+        border:none;
+        border-radius: 3px;
+        padding:5px 0 5px 5px;
+        margin: 2px 0px 2px 0px;
+    }
+  .crud-btn-active{
+      background-color:$bg-primary-color;
+      }
+  }
+}
+.crud-table{
+    font-size: $font-small;
+
+    tbody {
+
+        tr {
+            th {
+                vertical-align: middle;
+            }
+
+            td {
+                vertical-align: middle;
+            }
+
+            td:last-child {
+                min-width: 400px;
+
+
+                @media (max-width: $desktop) {
+                    min-width: 170px;
+                    text-align: center;
+
+                    a, button {
+                        margin: 2px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.my-btn-delete,.my-btn-edit,.my-btn-show{
+    font-size:18px;
+    i{
+        padding-left:3px;
+    }
+}
+
+.my-btn-delete{
+    color:$bg-primary-color;
+    background-color: $bg-footer-color;
+    &:hover{
+         color:#fff;
+    }
+}
+
+.crud-title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.crud-form{
+    font-size: $font-small;
+    padding-bottom: 100px !important;
+
+    .form-control{
+        font-size: $font-small;
+    }
+    .form-buttons{
+        input,a{
+        font-size: $font-small;
+    }
+    }
+}
+
+
+.crud-show{
+    padding-top: 70px !important;
+ .buttons{
+     a{
+         font-size:22px;
+     }
+ }
+}
+.modal{
+    font-size:22px;
+.modal-footer button{
+    font-size:22px;
+}
+}
+
+.crud-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    h1 {
+        margin-bottom: 0 !important;
+        margin-top: 100px;
+    }
+}
+
+

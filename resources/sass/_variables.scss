@@ -1,0 +1,64 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+// $font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$font-extrasmall: 0.85rem; // #categories
+$font-small: 1rem; // categories, input, btn, search-indicator
+// $font-btn: 1.2rem; // btn
+$font-medium: 1.4rem; // restaurants name in landing
+$font-large: 2.3rem; //
+$font-extralarge: 3.3rem; // h1
+
+$letterspacing-small: 1.3px; // categories, search-indicator
+$letterspacing-medium: 1.7px; // nav btn
+// $letterspacing-large: ;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+//colori
+$primary-color: #000; // meglio #080808?
+$secondary-color: #fff;
+$tertiary-color: grey;
+// $bg-primary-color: hsl(39, 96%, 53%); // meglio rgb(240,147,49)
+// $bg-secondary-color: red; // meglio rgb(52,144,220)
+// $bg-secondary-color: hsl(181, 53%, 45%); // meglio rgb(52,144,220)
+$bg-secondary-color: #71bed1; // meglio rgb(52,144,220)
+// $bg-primary-color: hsl(6, 89%, 64%); // meglio rgb(52,144,220)
+$bg-primary-color: #ff6e54; // meglio rgb(52,144,220)
+$bg-tertiary-color: #fff;
+$bg-footer-color: #1d1d1d;
+
+//bordo
+$border-radius-btn: 4px;
+$border-radius-windows: 6px;
+$border-radius-windows-large: 20px;
+$border-radius-circle: 50%;
+
+//text
+$small-text: 15px;
+$medium-text: 20px;
+$large-text: 26px;
+$extra-large-text: 32px;
+
+$box-shadow-light: 0 0 10px rgba(100, 100, 100, 0.8);
+
+
+// mediaquery
+
+$mobile : 576px;
+$tablet: 768px;
+$desktop: 992px;

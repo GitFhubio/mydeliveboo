@@ -1,0 +1,68 @@
+.order-container{
+    padding:100px 0;
+.receipt-container {
+    @include flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .no-orders{
+        font-size:22px;
+    }
+    .receipt {
+        padding: 80px 30px;
+        margin: 20px auto;
+        width: 400px;
+        background-image:url('https://static.vecteezy.com/ti/foto-gratuito/p2/2078291-sfondo-di-carta-stropicciata-gratuito-foto.jpg');
+        background-size: cover;
+        font-family: 'VT323', monospace;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            display: block;
+            background:
+            linear-gradient(-45deg, transparent 33.33%,#D7EAF0 33.33%, #D7EAF0 66.66%,transparent 66.66%),
+            linear-gradient(45deg, transparent 33.33%,#D7EAF0 33.33%, #D7EAF0 66.66%, transparent 66.66%);
+            background-size: 10px 20px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            display: block;
+            background: linear-gradient(-45deg, transparent 33.33%,#D7EAF0 33.33%, #D7EAF0 66.66%, transparent 66.66%),
+            linear-gradient(45deg, transparent 33.33%,#D7EAF0 33.33%, #D7EAF0 66.66%, transparent 66.66%);
+            background-size: 10px 20px;
+            transform: rotate(180deg);
+        }
+
+        .logo {
+            text-align: center;
+            img {
+                filter: grayscale(100%);
+            }
+        }
+
+        .info {
+            p {
+                color: grey;
+            }
+        }
+    }
+}
+
+.header-table {
+    background-color: rgba(grey, 0.2);
+}
+
+}
+
+
